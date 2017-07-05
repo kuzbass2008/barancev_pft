@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="116.25" y="79.0">ru.brncv.pft.addressbook.tests.TestBase</node>
+    <node x="85.25" y="0.0">ru.brncv.pft.addressbook.appmanager.ApplicationManager</node>
+    <node x="0.0" y="158.0">ru.brncv.pft.addressbook.tests.GroupCreationTests</node>
+    <node x="173.0" y="158.0">ru.brncv.pft.addressbook.tests.GroupRemovalTests</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.brncv.pft.addressbook.tests.TestBase" target="ru.brncv.pft.addressbook.appmanager.ApplicationManager">
+      <point x="-23.5" y="-14.5" />
+      <point x="139.75" y="54.0" />
+      <point x="124.25" y="54.0" />
+      <point x="-39.0" y="14.5" />
+    </edge>
+    <edge source="ru.brncv.pft.addressbook.tests.GroupRemovalTests" target="ru.brncv.pft.addressbook.tests.TestBase">
+      <point x="0.0" y="-14.5" />
+      <point x="250.0" y="133.0" />
+      <point x="186.75" y="133.0" />
+      <point x="23.5" y="14.5" />
+    </edge>
+    <edge source="ru.brncv.pft.addressbook.tests.GroupCreationTests" target="ru.brncv.pft.addressbook.tests.TestBase">
+      <point x="0.0" y="-14.5" />
+      <point x="76.5" y="133.0" />
+      <point x="139.75" y="133.0" />
+      <point x="-23.5" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="692.5" y="241.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
