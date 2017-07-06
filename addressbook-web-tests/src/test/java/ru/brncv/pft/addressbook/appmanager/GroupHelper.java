@@ -1,7 +1,8 @@
 package ru.brncv.pft.addressbook.appmanager;
 
+import com.thoughtworks.selenium.webdriven.commands.IsElementPresent;
 import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
 import ru.brncv.pft.addressbook.model.GroupData;
 
 /**
@@ -9,7 +10,7 @@ import ru.brncv.pft.addressbook.model.GroupData;
  */
 public class GroupHelper extends HelperBase {
 
-    public GroupHelper(FirefoxDriver wd) {
+    public GroupHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -45,5 +46,16 @@ public class GroupHelper extends HelperBase {
 
     public void submitGroupModification() {
         click(By.name("update"));
+    }
+
+    public void createGroup(GroupData group) {
+        initGroupCreation();
+        fillGroupForm(group);
+        submitGroupCreation();
+        returnToGroupPage();
+    }
+
+    public boolean isThereAGroup() {
+        return isElementPresent(By.name("selected[]"));
     }
 }
